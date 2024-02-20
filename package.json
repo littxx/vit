@@ -9,7 +9,12 @@
     "lint": " eslint src",
     "prepare": "husky install"
   },
-  "dependencies": {
+  "lint-staged":{
+    "src/**/*":[
+      "npm lint --fix"
+    ]
+  },
+    "dependencies": {
     "next": "14.1.0",
     "react": "^18",
     "react-dom": "^18"
